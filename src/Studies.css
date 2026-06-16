@@ -1,0 +1,114 @@
+/* Styles para el slider de Studies */
+.studies-section {
+  padding: 3rem 1rem;
+  background: var(--bg, #01031f);
+
+}
+
+.studies-shell {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.studies-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background : rgba(204, 167, 167, 0.614);
+  border-radius: 8px;
+  padding: 30px 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slides-wrapper {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  transition: transform 300ms ease;
+}
+
+.slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.study-title {
+  margin: 0 0 0.25rem 0;
+}
+
+.study-date {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.study-desc {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.slider-btn {
+  background: transparent;
+  border: 0;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider-btn:focus {
+  outline: 2px solid #007ACC;
+}
+
+.prev { margin-right: 0.25rem }
+.next { margin-left: 0.25rem }
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
