@@ -79,7 +79,7 @@ function Studies() {
     if (!items || items.length === 0) return null
 
     return (
-        <section className="studies-section" id="proyectos">
+        <section className="studies-section" id="estudios">
             <div className="studies-shell">
                 <h2 className="studies-title">ESTUDIOS</h2>
 

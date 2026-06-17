@@ -9,10 +9,9 @@ function Header() {
 
       <nav className="nav-links" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Estudios</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#proyectos">Herramientas</a>
-        <a href="#proyectos">Contacto</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
   )

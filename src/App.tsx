@@ -2,6 +2,8 @@ import './App.css'
 import Header from './Header'
 import Home from './Home'
 import Studies from './Studies'
+import Skills from './Skills'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Header />
       <Home />
       <Studies />
+      <Skills />
+      <Contact />
     </main>
   )
 }
