@@ -112,3 +112,101 @@
 .dot.active {
   background: #333;
 }
+
+.study-hours-section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.study-hours-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.study-hours-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.study-hours-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  border: 6px solid radial-gradient(circle at 50% 50%, rgba(0,122,255,0.8), rgba(0,122,255,0.2));
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+
+.study-hours-circle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgba(0, 122, 255, 0.8) 0%,
+    rgba(0, 200, 255, 0.5) 25%,
+    rgba(0, 122, 255, 0.3) 50%,
+    rgba(0, 80, 200, 0.6) 75%,
+    rgba(0, 122, 255, 0.8) 100%
+  );
+  transform: rotate(-90deg);
+  transition: transform 1.1s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transform-origin: center;
+  clip-path: inset(0 0 0 0 round 50%);
+}
+
+.study-hours-circle.visible::before {
+  transform: rotate(270deg);
+}
+
+.study-hours-circle::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  background: rgba(1, 6, 24, 0.7);
+}
+
+.study-hours-value {
+  position: relative;
+  z-index: 1;
+  color: #f5f8ff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.study-hours-label {
+  margin: 0;
+  color: #d8dcec;
+  text-align: center;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+@media (max-width: 640px) {
+  .study-hours-card {
+    width: 100%;
+  }
+
+  .study-hours-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .study-hours-value {
+    font-size: 1.7rem;
+  }
+}
