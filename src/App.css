@@ -1,5 +1,7 @@
 .page-shell {
   padding: 0;
+  background: var(--bg);
+  min-height: 100vh;
 }
 
 .body-section {
@@ -151,7 +153,6 @@
   align-items: center;
   justify-content: space-around;
   padding: 18px 20px;
-  background: rgba(35, 0, 0, 0.614);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
 }

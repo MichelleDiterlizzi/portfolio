@@ -81,7 +81,7 @@ function Studies() {
     return (
         <section className="studies-section" id="proyectos">
             <div className="studies-shell">
-                <h2 className="studies-title">Estudios</h2>
+                <h2 className="studies-title">ESTUDIOS</h2>
 
                 <div className="slider">
                     <button className="slider-btn prev" onClick={prev} aria-label="Anterior">
