@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #e2134a;
-  --accent: #ffb672;
-  --highlight: #FF6B35;
+  --primary: rgba(255, 69, 181, 0.86);
   --surface: #030119;
   --bg: #0a011f;
   --text: #cac2c2;
   --text-h: #edcabf;
   --text-muted: #dadde0;
-  --border: #e5e7eb;
   --shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
 
   font-family: Inter, 'Segoe UI', sans-serif;  font-family: 'Open Sans', 'Segoe UI', sans-serif;  line-height: 1.5;

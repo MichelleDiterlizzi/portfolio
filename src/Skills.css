@@ -36,7 +36,11 @@
   margin: 0 0 2rem 0;
   text-align: center;
   font-size: 1.5rem;
-  color: var(--text-h, #edcabf);
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffffff 0%, #f6b1ce 50%, #ff0099 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .skills-icons {

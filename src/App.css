@@ -28,7 +28,7 @@
 .eyebrow {
   letter-spacing: 0.1em;
   color: var(--primary);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -71,7 +71,7 @@
 .cta-button:focus-visible {
   opacity: 1;
   transform: translateY(-2px);
-  box-shadow: 0 24px 40px rgba(255, 92, 10, 0.24);
+  box-shadow: 0 24px 40px rgba(242, 250, 0, 0.24);
 }
 
 .social-links {
@@ -115,10 +115,10 @@
   height: 300px;
   border-radius: 50%;
   padding: 10px;
-  background: linear-gradient(135deg, #004bb4, #ff3705, #ffed22);
+  background: linear-gradient(135deg, #2900cfe0, #cf0068cb, #d4ff00bb);
   box-shadow:
-    0 0 0 2px rgba(255, 0, 0, 0.84),
-    0 0 10px rgba(253, 0, 101, 0.995),
+    0 0 0 2px rgba(223, 80, 255, 0.84),
+    0 0 10px rgba(255, 44, 128, 0.995),
     0 0 25px rgba(114, 175, 255, 0.55);
   overflow: visible;
   position: relative;
@@ -127,7 +127,7 @@
 .profile-photo {
   width: 110%;
   height: 110%;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 50%;
   display: block;
   margin-left: -5%;

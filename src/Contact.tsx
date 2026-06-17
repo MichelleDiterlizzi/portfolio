@@ -4,7 +4,7 @@ function Contact() {
     return (
         <section className="contact-section" id="contacto">
             <div className="contact-shell">
-                <h2 className="contact-title">Contacto</h2>
+                <h2 className="contact-title">CONTACTO</h2>
                 <form
                     className="contact-form"
                     action="https://formsubmit.co/michelle.dterlizzi@gmail.com"

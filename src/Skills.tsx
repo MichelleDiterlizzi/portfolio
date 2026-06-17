@@ -57,7 +57,7 @@ function Skills() {
     return (
         <section className="skills-section" id="skills">
             <div className="skills-shell">
-                <h2 className="skills-title">Skills</h2>
+                <h2 className="skills-title">SKILLS</h2>
                 <div className="skills-grid">
                     {groups.map((group) => (
                         <article className="skill-card" key={group.title}>

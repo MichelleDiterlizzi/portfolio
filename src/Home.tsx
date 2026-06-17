@@ -15,12 +15,12 @@ function Home() {
             <br /><br />Mi sueño es formar parte de un equipo real, donde el factor humano importe y donde podamos construir un ambiente de cooperación y crecimiento compartido.
           </p>
           <div className="hero-actions">
-            <a className="cta-button" href="#contactar">Hablemos!</a>
+            <a className="cta-button" href="#contacto">Hablemos!</a>
             <div className="social-links">
               <a className="social-link" href="https://www.linkedin.com/in/michelle-di-terlizzi/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
                 <FaLinkedin aria-hidden="true" />
               </a>
-              <a className="social-link" href="https://github.com/" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
+              <a className="social-link" href="https://github.com/MichelleDiterlizzi" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
                 <FaGithub aria-hidden="true" />
               </a>
             </div>
