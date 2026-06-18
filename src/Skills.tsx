@@ -16,6 +16,7 @@ import {
 } from 'react-icons/fa'
 import { SiTailwindcss, SiMongodb, SiTypescript } from 'react-icons/si'
 import { DiMysql } from 'react-icons/di'
+import { useTranslation } from 'react-i18next'
 
 const frontend = [
     { icon: FaHtml5, name: 'HTML' },
@@ -54,10 +55,12 @@ function Skills() {
         { title: 'Herramientas', items: tools },
     ]
 
+    const { t } = useTranslation();
+
     return (
         <section className="skills-section" id="skills">
             <div className="skills-shell">
-                <h2 className="skills-title">SKILLS</h2>
+                <h2 className="skills-title">{t('title.skills')}</h2>
                 <div className="skills-grid">
                     {groups.map((group) => (
                         <article className="skill-card" key={group.title}>

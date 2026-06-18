@@ -1,16 +1,6 @@
+import { useTranslation } from 'react-i18next'
 import './Studies.css'
 import { useState, useEffect, useRef } from 'react'
-
-type Study = {
-    title: string
-    school: string
-    date: string
-    description: string
-    studyHours: number
-    practiceHours: number
-    studyLabel: string
-    practiceLabel: string
-}
 
 const AnimatedCounter = ({ value, duration = 1000, isActive }: { value: number; duration?: number; isActive: boolean }) => {
     const [count, setCount] = useState(0)
@@ -32,28 +22,20 @@ const AnimatedCounter = ({ value, duration = 1000, isActive }: { value: number; 
     return <span>{count}</span>
 }
 
-const sampleStudies: Study[] = [
-    {
-        title: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)',
-        school: 'Institut Obert de Catalunya',
-        date: '2025 - En curso',
-        description: 'Formación oficial en modalidad online mediante un alto grado de autonomía y disciplina. Enfocada en adquirir una base profunda en arquitectura de software y sistemas, desarrollando proyectos en diferentes entornos como Windows y Linux. Todo ello impulsado por una sólida vocación y capacidad para la autoformación continua.',
-        studyHours: 1500,
-        practiceHours: 500,
-        studyLabel: 'Horas de estudio',
-        practiceLabel: 'Horas de práctica',
-    },
-    {
-        title: 'BootCamp FullStack Developer',
-        school: 'IT Academy ',
-        date: '2024-2025',
-        description: 'Formación intensiva con un alto volumen de horas de programación práctica, centrada en el uso de arquitecturas, APIs y bases de datos. Esta base técnica me aporta una gran agilidad en el código y me facilita comprender la teoría de DAM con un excelente rendimiento.',
-        studyHours: 500,
-        practiceHours: 160,
-        studyLabel: 'Horas de estudio',
-        practiceLabel: 'Horas de práctica',
-    },
-]
+const sampleStudies = [
+  {
+    id: 'dam',
+    school: 'Institut Obert de Catalunya',
+    studyHours: 1500,
+    practiceHours: 500,
+  },
+  {
+    id: 'bootcamp',
+    school: 'IT Academy ',
+    studyHours: 500,
+    practiceHours: 160,
+  },
+];
 
 function Studies() {
     const [index, setIndex] = useState(0)
@@ -78,10 +60,12 @@ function Studies() {
 
     if (!items || items.length === 0) return null
 
+    const { t } = useTranslation();
+
     return (
         <section className="studies-section" id="estudios">
             <div className="studies-shell">
-                <h2 className="studies-title">ESTUDIOS</h2>
+                <h2 className="studies-title">{t('title.studies')}</h2>
 
                 <div className="slider">
                     <button className="slider-btn prev" onClick={prev} aria-label="Anterior">
@@ -106,22 +90,23 @@ function Studies() {
                                         }
                                     }}
                                 >
-                                    <h3 className="study-title">{s.title}</h3>
-                                    <time className="study-date">{s.date}</time>
-                                    <p className="study-desc">{s.description}</p>
+                                    <h3 className="study-title">{t(`studies.${s.id}.title`)}</h3>
+                                    <h4 className="study-school">{s.school}</h4>
+                                    <time className="study-date">{t(`studies.${s.id}.date`)}</time>
+                                    <p className="study-desc">{t(`studies.${s.id}.description`)}</p>
 
                                     <div className="study-hours-grid">
                                         <div className="study-hours-card">
                                             <div className="study-hours-circle">
                                                 <span className="study-hours-value"><AnimatedCounter value={s.studyHours} duration={700} isActive={i === index} /> h</span>
                                             </div>
-                                            <p className="study-hours-label">{s.studyLabel}</p>
+                                            <p className="study-hours-label">{t(`studies.labels.studyHours`)}</p>
                                         </div>
                                         <div className="study-hours-card">
                                             <div className="study-hours-circle">
                                                 <span className="study-hours-value"><AnimatedCounter value={s.practiceHours} duration={700} isActive={i === index} /> h</span>
                                             </div>
-                                            <p className="study-hours-label">{s.practiceLabel}</p>
+                                            <p className="study-hours-label">{t(`studies.labels.practiceHours`)}</p>
                                         </div>
                                     </div>
                                 </li>

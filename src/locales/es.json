@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "aboutMe": "Sobre mí",
+    "studies": "Estudios",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "title": {
+    "studies": "ESTUDIOS",
+    "skills": "SKILLS",
+    "contact": "CONTACTO"
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy Michelle Di Terlizzi",
+    "title": "Desarrollador web Full Stack",
+    "philosophyTitle": "Mi Filosofía",
+    "paragraph1": "En un sector donde las listas de tecnologías y habilidades técnicas suelen ser de gran extensión, prefiero destacar la disciplina y la constancia como mis principales fortalezas.",
+    "paragraph2": "Con formación en diferentes lenguajes tanto backend como frontend y enfoque en arquitecturas limpias potenciadas por IA, mi objetivo no es solo picar código en masa.",
+    "paragraph3": "Mi sueño es formar parte de un equipo real, donde el factor humano importa y donde podamos construir un ambiente de cooperación y crecimiento compartido.",
+    "ctaButton": "¡HABLEMOS!"
+  },
+  "studies": {
+    "labels": {
+      "studyHours": "Horas de estudio",
+      "practiceHours": "Horas de práctica"
+    },
+    "dam": {
+      "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
+      "date": "2025 - En curso",
+      "description": "Formación oficial en modalidad online mediante un alto grado de autonomía y disciplina. Enfocada en adquirir una base profunda en arquitectura de software y sistemas, desarrollando proyectos en diferentes entornos como Windows y Linux. Todo ello impulsado por una sólida vocación y capacidad para la autoformación continua."
+    },
+    "bootcamp": {
+      "title": "BootCamp FullStack Developer",
+      "date": "2024-2025",
+      "description": "Formación intensiva con un alto volumen de horas de programación práctica, centrada en el uso de arquitecturas, APIs y bases de datos. Esta base técnica me aporta una gran agilidad en el código y me facilita comprender la teoría de DAM con un excelente rendimiento."
+    }
+  },
+  "contact": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "sendButton": "Enviar",
+    "lblname": "Tu nombre",
+    "lblemail": "Tu@Email",
+    "lblmessage": "Escribe tu mensaje..."
+  }
+}

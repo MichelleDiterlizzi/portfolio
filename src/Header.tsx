@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import { useTranslation } from 'react-i18next'; // 1. Importas el hook
+import './i18n';
 
 const navItems = [
-    { href: '#sobre-mi', label: 'Sobre mí' },
-    { href: '#estudios', label: 'Estudios' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#contacto', label: 'Contacto' },
+    { href: '#sobre-mi', label: 'nav.aboutMe' },
+    { href: '#estudios', label: 'nav.studies' },
+    { href: '#skills', label: 'nav.skills' },
+    { href: '#contacto', label: 'nav.contact' },
 ]
 
 function Header() {
@@ -32,9 +34,15 @@ function Header() {
             if (section) observer.observe(section)
         })
 
+  
+
         return () => observer.disconnect()
     }, [])
-
+    // 3. Creas la función para cambiar de idioma
+        const { t, i18n } = useTranslation();
+        const changeLanguage = (lng: string) => {
+        i18n.changeLanguage(lng);
+    };
     return (
         <header className="site-header">
             <a className="brand" href="#sobre-mi">
@@ -55,10 +63,15 @@ function Header() {
                         href={item.href}
                         className={activeSection === item.href ? 'active' : ''}
                     >
-                        {item.label}
+                        {t(item.label)}
                     </a>
                 ))}
             </nav>
+            <div className="language-selector" style={{ display: 'flex', gap: '10px', marginLeft: '20px' }}>
+                <button onClick={() => changeLanguage('es')} 
+                style={{ opacity: i18n.language.startsWith('es') ? 1 : 0.5, cursor: 'pointer', background: 'none', border: 'none', color: '#fff' }} >ES</button>
+                <button onClick={() => changeLanguage('en')} style={{ opacity: i18n.language.startsWith('en') ? 1 : 0.5, cursor: 'pointer', background: 'none', border: 'none', color: '#fff' }}>EN</button>
+            </div>
         </header>
     )
 }

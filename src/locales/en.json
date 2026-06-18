@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "aboutMe": "About me",
+    "studies": "Studies",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "title": {
+    "studies": "STUDIES",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "greeting": "Hi! I'm Michelle Di Terlizzi",
+    "title": "Full Stack Web Developer",
+    "philosophyTitle": "My Philosophy",
+    "paragraph1": "In an industry where lists of technologies and technical skills tend to be extensive, I prefer to highlight discipline and consistency as my main strengths.",
+    "paragraph2": "With training in various frontend and backend languages and a focus on clean architectures powered by AI, my goal isn't simply to produce code in mass.",
+    "paragraph3": "My dream is to be part of a real team, where the human factor matters and where we can build an environment of cooperation and shared growth.",
+    "ctaButton": "LET'S TALK!"
+  },
+  "studies": {
+    "labels": {
+      "studyHours": "Study hours",
+      "practiceHours": "Practice hours"
+    },
+    "dam": {
+      "title": "Higher Technical Degree in Multi-platform Application Development (DAM)",
+      "date": "2025 - Present",
+      "description": "Official online training driven by a high degree of autonomy and discipline. Focused on acquiring a deep foundation in software architecture and systems, developing projects in different environments such as Windows and Linux. All driven by a solid vocation and capacity for continuous self-learning."
+    },
+    "bootcamp": {
+      "title": "FullStack Developer BootCamp",
+      "date": "2024-2025",
+      "description": "Intensive training with a high volume of practical programming hours, focused on the use of architectures, APIs, and databases. This technical foundation gives me great agility in coding and makes it easier to understand DAM theory with excellent performance."
+    }
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendButton": "Send",
+    "lblname": "Your Name",
+    "lblemail": "Your@Email",
+    "lblmessage": "Write your message..."
+  }
+}
